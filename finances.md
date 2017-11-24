@@ -11,9 +11,13 @@ Only source of income so far is the sponsorship by R Consortium (and we do not e
 ``` r
 income <- data.frame(date = "2017-10-23",
                      text = "R Consortium",
-                     DKK = 1106.86,
-                     stringsAsFactors = FALSE)
+                     DKK = 1106.86)
+knitr::kable(income)
 ```
+
+| date       | text         |      DKK|
+|:-----------|:-------------|--------:|
+| 2017-10-23 | R Consortium |  1106.86|
 
 Expenses
 --------
@@ -26,10 +30,15 @@ Biggest expense is meetup.com where we started on a basic plan but had to upgrad
 Besides this expense every six months we only expect expenses to drinks and snacks for meetups that aren't sponsored by anyone.
 
 ``` r
-expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10,
-  stringsAsFactors = FALSE)
+expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10)
 expenses[2,] <- data.frame("2017-11-13", "Snacks and drinks", 340.85)
+knitr::kable(expenses)
 ```
+
+| date       | text              |     DKK|
+|:-----------|:------------------|-------:|
+| 2017-10-03 | meetup.com        |  192.10|
+| 2017-11-13 | Snacks and drinks |  340.85|
 
 Current status
 --------------

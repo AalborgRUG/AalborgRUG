@@ -7,6 +7,7 @@ output: rmarkdown::github_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+old <- options(stringsAsFactors = FALSE)
 ```
 
 ## Income
@@ -16,8 +17,8 @@ expect that to change anytime soon):
 ```{r}
 income <- data.frame(date = "2017-10-23",
                      text = "R Consortium",
-                     DKK = 1106.86,
-                     stringsAsFactors = FALSE)
+                     DKK = 1106.86)
+knitr::kable(income)
 ```
 
 ## Expenses
@@ -31,9 +32,9 @@ when we hit 50+ members. The subscription info I have from meetup.com so far is:
 Besides this expense every six months we only expect expenses to drinks and snacks
 for meetups that aren't sponsored by anyone.
 ```{r}
-expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10,
-  stringsAsFactors = FALSE)
+expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10)
 expenses[2,] <- data.frame("2017-11-13", "Snacks and drinks", 340.85)
+knitr::kable(expenses)
 ```
 
 ## Current status
@@ -47,3 +48,7 @@ Since we have a `r ifelse(profit>0, "profit we are all happy", "deficit we shoul
 ## Budget
 
 No, we don't have a budget. Fingers crossed.
+
+```{r include=FALSE}
+options(old)
+```
