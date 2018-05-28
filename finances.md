@@ -1,7 +1,7 @@
 AalborgRUG finances
 ================
 Ege Rubak
-December 6, 2017
+29 May, 2018
 
 Income
 ------
