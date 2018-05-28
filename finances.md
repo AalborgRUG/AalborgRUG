@@ -26,6 +26,8 @@ Biggest expense is meetup.com where we started on a basic plan but had to upgrad
 
 -   Your last payment of US$29.94 was received on Sep 30, 2017.
 -   Your next payment of $47.94 for a 6 month Unlimited plan will be charged on Mar 30, 2018.
+-   Your last payment of US$47.94 was received on Apr 1, 2018.
+-   Your next payment of $47.94 for a 6 month Unlimited plan will be charged on Sep 30, 2018.
 
 Besides this expense every six months we only expect expenses to drinks and snacks for meetups that aren't sponsored by anyone.
 
@@ -33,6 +35,7 @@ Besides this expense every six months we only expect expenses to drinks and snac
 expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10)
 expenses[2,] <- data.frame("2017-11-13", "Snacks and drinks", 340.85)
 expenses[3,] <- data.frame("2017-12-04", "Foreign bank transfer fee", 35.00)
+expenses[4,] <- data.frame("2018-04-04", "meetup.com", 295.09)
 knitr::kable(expenses)
 ```
 
@@ -41,6 +44,7 @@ knitr::kable(expenses)
 | 2017-10-03 | meetup.com                |  192.10|
 | 2017-11-13 | Snacks and drinks         |  340.85|
 | 2017-12-04 | Foreign bank transfer fee |   35.00|
+| 2018-04-04 | meetup.com                |  295.09|
 
 Current status
 --------------
@@ -51,7 +55,7 @@ At the moment it all boils down to:
 (profit <- sum(income$DKK) - sum(expenses$DKK))
 ```
 
-    ## [1] 538.91
+    ## [1] 243.82
 
 Since we have a profit we are all happy.
 

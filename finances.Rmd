@@ -28,6 +28,8 @@ when we hit 50+ members. The subscription info I have from meetup.com so far is:
 
 - Your last payment of US$29.94 was received on Sep 30, 2017.
 - Your next payment of $47.94 for a 6 month Unlimited plan will be charged on Mar 30, 2018.
+- Your last payment of US$47.94 was received on Apr 1, 2018.
+- Your next payment of $47.94 for a 6 month Unlimited plan will be charged on Sep 30, 2018.
 
 Besides this expense every six months we only expect expenses to drinks and snacks
 for meetups that aren't sponsored by anyone.
@@ -35,6 +37,7 @@ for meetups that aren't sponsored by anyone.
 expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10)
 expenses[2,] <- data.frame("2017-11-13", "Snacks and drinks", 340.85)
 expenses[3,] <- data.frame("2017-12-04", "Foreign bank transfer fee", 35.00)
+expenses[4,] <- data.frame("2018-04-04", "meetup.com", 295.09)
 knitr::kable(expenses)
 ```
 
