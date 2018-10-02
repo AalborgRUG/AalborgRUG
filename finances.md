@@ -1,7 +1,7 @@
 AalborgRUG finances
 ================
 Ege Rubak
-29 May, 2018
+02 October, 2018
 
 Income
 ------
@@ -9,15 +9,18 @@ Income
 Only source of income so far is the sponsorship by R Consortium (and we do not expect that to change anytime soon):
 
 ``` r
+old <- options(stringsAsFactors = FALSE)
 income <- data.frame(date = "2017-10-23",
                      text = "R Consortium",
                      DKK = 1106.86)
+income[2,] <- data.frame("2018-06-27", "R Consortium", 1119.06)
 knitr::kable(income)
 ```
 
 | date       | text         |      DKK|
 |:-----------|:-------------|--------:|
 | 2017-10-23 | R Consortium |  1106.86|
+| 2018-06-27 | R Consortium |  1119.06|
 
 Expenses
 --------
@@ -29,13 +32,17 @@ Biggest expense is meetup.com where we started on a basic plan but had to upgrad
 -   Your last payment of US$47.94 was received on Apr 1, 2018.
 -   Your next payment of $47.94 for a 6 month Unlimited plan will be charged on Sep 30, 2018.
 
-Besides this expense every six months we only expect expenses to drinks and snacks for meetups that aren't sponsored by anyone.
+**NOTE:** With the new R Consortium RUG Program the subscription is paid for by R Consortium, so this expense will no longer appear.
+
+The only expense we expect now is to drinks and snacks for meetups that aren't sponsored by anyone.
 
 ``` r
 expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10)
 expenses[2,] <- data.frame("2017-11-13", "Snacks and drinks", 340.85)
 expenses[3,] <- data.frame("2017-12-04", "Foreign bank transfer fee", 35.00)
 expenses[4,] <- data.frame("2018-04-04", "meetup.com", 295.09)
+expenses[5,] <- data.frame("2018-06-27", "Foreign bank transfer fee", 30.00)
+expenses[6,] <- data.frame("2018-10-01", "Snacks and drinks", 506.25)
 knitr::kable(expenses)
 ```
 
@@ -45,6 +52,8 @@ knitr::kable(expenses)
 | 2017-11-13 | Snacks and drinks         |  340.85|
 | 2017-12-04 | Foreign bank transfer fee |   35.00|
 | 2018-04-04 | meetup.com                |  295.09|
+| 2018-06-27 | Foreign bank transfer fee |   30.00|
+| 2018-10-01 | Snacks and drinks         |  506.25|
 
 Current status
 --------------
@@ -55,7 +64,7 @@ At the moment it all boils down to:
 (profit <- sum(income$DKK) - sum(expenses$DKK))
 ```
 
-    ## [1] 243.82
+    ## [1] 826.63
 
 Since we have a profit we are all happy.
 
@@ -63,3 +72,7 @@ Budget
 ------
 
 No, we don't have a budget. Fingers crossed.
+
+``` r
+options(old)
+```
