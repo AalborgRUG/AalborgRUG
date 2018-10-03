@@ -12,7 +12,7 @@ Prerequisites
 -------------
 
 -   Be a member of the [AalborgRUG GitHub organisation](https://github.com/AalborgRUG) (contact [Ege](mailto:rubak@math.aau.dk) to request membership, include your GitHub account name in the email)
--   Have git installed
+-   Have [git](https://git-scm.com/) installed
 -   A framework that lets you create slides in HTML format (ioslides, slidy, xaringan, etc.)
 
 Step 1: create repository for your talk
