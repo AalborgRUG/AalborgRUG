@@ -1,4 +1,5 @@
 # AalborgRUG
 Resources for the Aalborg R UseR Group
 
-See finances.md for the current financial situation.
+- [**finances**](finances.md) : the current financial situation
+- [**hosting**](hosting.md) : guide to hosting slides in this organisation
