@@ -1,12 +1,12 @@
 AalborgRUG finances
 ================
 Ege Rubak
-02 October, 2018
+28 May, 2019
 
-Income
-------
+## Income
 
-Only source of income so far is the sponsorship by R Consortium (and we do not expect that to change anytime soon):
+Only source of income so far is the sponsorship by R Consortium (and we
+do not expect that to change anytime soon):
 
 ``` r
 old <- options(stringsAsFactors = FALSE)
@@ -17,24 +17,30 @@ income[2,] <- data.frame("2018-06-27", "R Consortium", 1119.06)
 knitr::kable(income)
 ```
 
-| date       | text         |      DKK|
-|:-----------|:-------------|--------:|
-| 2017-10-23 | R Consortium |  1106.86|
-| 2018-06-27 | R Consortium |  1119.06|
+| date       | text         |     DKK |
+| :--------- | :----------- | ------: |
+| 2017-10-23 | R Consortium | 1106.86 |
+| 2018-06-27 | R Consortium | 1119.06 |
 
-Expenses
---------
+## Expenses
 
-Biggest expense is meetup.com where we started on a basic plan but had to upgrade when we hit 50+ members. The subscription info I have from meetup.com so far is:
+Biggest expense is meetup.com where we started on a basic plan but had
+to upgrade when we hit 50+ members. The subscription info I have from
+meetup.com so far is:
 
--   Your last payment of US$29.94 was received on Sep 30, 2017.
--   Your next payment of $47.94 for a 6 month Unlimited plan will be charged on Mar 30, 2018.
--   Your last payment of US$47.94 was received on Apr 1, 2018.
--   Your next payment of $47.94 for a 6 month Unlimited plan will be charged on Sep 30, 2018.
+  - Your last payment of US$29.94 was received on Sep 30, 2017.
+  - Your next payment of $47.94 for a 6 month Unlimited plan will be
+    charged on Mar 30, 2018.
+  - Your last payment of US$47.94 was received on Apr 1, 2018.
+  - Your next payment of $47.94 for a 6 month Unlimited plan will be
+    charged on Sep 30, 2018.
 
-**NOTE:** With the new R Consortium RUG Program the subscription is paid for by R Consortium, so this expense will no longer appear.
+**NOTE:** With the new R Consortium RUG Program the subscription is paid
+for by R Consortium, so this expense will no longer appear.
 
-The only expense we expect now is to drinks and snacks for meetups that aren't sponsored by anyone.
+The only expense we expect now is to drinks and snacks for meetups that
+aren’t sponsored by
+anyone.
 
 ``` r
 expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10)
@@ -43,20 +49,21 @@ expenses[3,] <- data.frame("2017-12-04", "Foreign bank transfer fee", 35.00)
 expenses[4,] <- data.frame("2018-04-04", "meetup.com", 295.09)
 expenses[5,] <- data.frame("2018-06-27", "Foreign bank transfer fee", 30.00)
 expenses[6,] <- data.frame("2018-10-01", "Snacks and drinks", 506.25)
+expenses[7,] <- data.frame("2019-23-04", "Snacks and drinks", 521.08)
 knitr::kable(expenses)
 ```
 
-| date       | text                      |     DKK|
-|:-----------|:--------------------------|-------:|
-| 2017-10-03 | meetup.com                |  192.10|
-| 2017-11-13 | Snacks and drinks         |  340.85|
-| 2017-12-04 | Foreign bank transfer fee |   35.00|
-| 2018-04-04 | meetup.com                |  295.09|
-| 2018-06-27 | Foreign bank transfer fee |   30.00|
-| 2018-10-01 | Snacks and drinks         |  506.25|
+| date       | text                      |    DKK |
+| :--------- | :------------------------ | -----: |
+| 2017-10-03 | meetup.com                | 192.10 |
+| 2017-11-13 | Snacks and drinks         | 340.85 |
+| 2017-12-04 | Foreign bank transfer fee |  35.00 |
+| 2018-04-04 | meetup.com                | 295.09 |
+| 2018-06-27 | Foreign bank transfer fee |  30.00 |
+| 2018-10-01 | Snacks and drinks         | 506.25 |
+| 2019-23-04 | Snacks and drinks         | 521.08 |
 
-Current status
---------------
+## Current status
 
 At the moment it all boils down to:
 
@@ -64,14 +71,13 @@ At the moment it all boils down to:
 (profit <- sum(income$DKK) - sum(expenses$DKK))
 ```
 
-    ## [1] 826.63
+    ## [1] 305.55
 
 Since we have a profit we are all happy.
 
-Budget
-------
+## Budget
 
-No, we don't have a budget. Fingers crossed.
+No, we don’t have a budget. Fingers crossed.
 
 ``` r
 options(old)
