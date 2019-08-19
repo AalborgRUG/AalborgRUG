@@ -1,7 +1,7 @@
 AalborgRUG finances
 ================
 Ege Rubak
-28 May, 2019
+19 August, 2019
 
 ## Income
 
@@ -14,6 +14,7 @@ income <- data.frame(date = "2017-10-23",
                      text = "R Consortium",
                      DKK = 1106.86)
 income[2,] <- data.frame("2018-06-27", "R Consortium", 1119.06)
+income[3,] <- data.frame("2019-07-25", "R Consortium", 1173.02)
 knitr::kable(income)
 ```
 
@@ -21,6 +22,7 @@ knitr::kable(income)
 | :--------- | :----------- | ------: |
 | 2017-10-23 | R Consortium | 1106.86 |
 | 2018-06-27 | R Consortium | 1119.06 |
+| 2019-07-25 | R Consortium | 1173.02 |
 
 ## Expenses
 
@@ -49,7 +51,8 @@ expenses[3,] <- data.frame("2017-12-04", "Foreign bank transfer fee", 35.00)
 expenses[4,] <- data.frame("2018-04-04", "meetup.com", 295.09)
 expenses[5,] <- data.frame("2018-06-27", "Foreign bank transfer fee", 30.00)
 expenses[6,] <- data.frame("2018-10-01", "Snacks and drinks", 506.25)
-expenses[7,] <- data.frame("2019-23-04", "Snacks and drinks", 521.08)
+expenses[7,] <- data.frame("2019-04-23", "Snacks and drinks", 521.08)
+expenses[8,] <- data.frame("2019-07-25", "Foreign bank transfer fee", 30.00)
 knitr::kable(expenses)
 ```
 
@@ -61,7 +64,8 @@ knitr::kable(expenses)
 | 2018-04-04 | meetup.com                | 295.09 |
 | 2018-06-27 | Foreign bank transfer fee |  30.00 |
 | 2018-10-01 | Snacks and drinks         | 506.25 |
-| 2019-23-04 | Snacks and drinks         | 521.08 |
+| 2019-04-23 | Snacks and drinks         | 521.08 |
+| 2019-07-25 | Foreign bank transfer fee |  30.00 |
 
 ## Current status
 
@@ -71,7 +75,7 @@ At the moment it all boils down to:
 (profit <- sum(income$DKK) - sum(expenses$DKK))
 ```
 
-    ## [1] 305.55
+    ## [1] 1448.57
 
 Since we have a profit we are all happy.
 
