@@ -47,6 +47,7 @@ expenses[5,] <- data.frame("2018-06-27", "Foreign bank transfer fee", 30.00)
 expenses[6,] <- data.frame("2018-10-01", "Snacks and drinks", 506.25)
 expenses[7,] <- data.frame("2019-04-23", "Snacks and drinks", 521.08)
 expenses[8,] <- data.frame("2019-07-25", "Foreign bank transfer fee", 30.00)
+expenses[9,] <- data.frame("2019-11-10", "Snacks and drinks", 683.90)
 knitr::kable(expenses)
 ```
 

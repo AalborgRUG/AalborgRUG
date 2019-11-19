@@ -1,7 +1,7 @@
 AalborgRUG finances
 ================
 Ege Rubak
-19 August, 2019
+19 November, 2019
 
 ## Income
 
@@ -53,6 +53,7 @@ expenses[5,] <- data.frame("2018-06-27", "Foreign bank transfer fee", 30.00)
 expenses[6,] <- data.frame("2018-10-01", "Snacks and drinks", 506.25)
 expenses[7,] <- data.frame("2019-04-23", "Snacks and drinks", 521.08)
 expenses[8,] <- data.frame("2019-07-25", "Foreign bank transfer fee", 30.00)
+expenses[9,] <- data.frame("2019-11-10", "Snacks and drinks", 683.90)
 knitr::kable(expenses)
 ```
 
@@ -66,6 +67,7 @@ knitr::kable(expenses)
 | 2018-10-01 | Snacks and drinks         | 506.25 |
 | 2019-04-23 | Snacks and drinks         | 521.08 |
 | 2019-07-25 | Foreign bank transfer fee |  30.00 |
+| 2019-11-10 | Snacks and drinks         | 683.90 |
 
 ## Current status
 
@@ -75,7 +77,7 @@ At the moment it all boils down to:
 (profit <- sum(income$DKK) - sum(expenses$DKK))
 ```
 
-    ## [1] 1448.57
+    ## [1] 764.67
 
 Since we have a profit we are all happy.
 
