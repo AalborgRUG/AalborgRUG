@@ -1,7 +1,7 @@
 AalborgRUG finances
 ================
 Ege Rubak
-19 November, 2019
+14 April, 2023
 
 ## Income
 
@@ -19,7 +19,7 @@ knitr::kable(income)
 ```
 
 | date       | text         |     DKK |
-| :--------- | :----------- | ------: |
+|:-----------|:-------------|--------:|
 | 2017-10-23 | R Consortium | 1106.86 |
 | 2018-06-27 | R Consortium | 1119.06 |
 | 2019-07-25 | R Consortium | 1173.02 |
@@ -30,19 +30,18 @@ Biggest expense is meetup.com where we started on a basic plan but had
 to upgrade when we hit 50+ members. The subscription info I have from
 meetup.com so far is:
 
-  - Your last payment of US$29.94 was received on Sep 30, 2017.
-  - Your next payment of $47.94 for a 6 month Unlimited plan will be
-    charged on Mar 30, 2018.
-  - Your last payment of US$47.94 was received on Apr 1, 2018.
-  - Your next payment of $47.94 for a 6 month Unlimited plan will be
-    charged on Sep 30, 2018.
+- Your last payment of US\$29.94 was received on Sep 30, 2017.
+- Your next payment of \$47.94 for a 6 month Unlimited plan will be
+  charged on Mar 30, 2018.
+- Your last payment of US\$47.94 was received on Apr 1, 2018.
+- Your next payment of \$47.94 for a 6 month Unlimited plan will be
+  charged on Sep 30, 2018.
 
 **NOTE:** With the new R Consortium RUG Program the subscription is paid
 for by R Consortium, so this expense will no longer appear.
 
 The only expense we expect now is to drinks and snacks for meetups that
-aren’t sponsored by
-anyone.
+aren’t sponsored by anyone.
 
 ``` r
 expenses <- data.frame(date = "2017-10-03", text = "meetup.com", DKK = 192.10)
@@ -54,11 +53,12 @@ expenses[6,] <- data.frame("2018-10-01", "Snacks and drinks", 506.25)
 expenses[7,] <- data.frame("2019-04-23", "Snacks and drinks", 521.08)
 expenses[8,] <- data.frame("2019-07-25", "Foreign bank transfer fee", 30.00)
 expenses[9,] <- data.frame("2019-11-10", "Snacks and drinks", 683.90)
+expenses[10,] <- data.frame("2023-04-13", "Snacks and drinks", 299.40)
 knitr::kable(expenses)
 ```
 
 | date       | text                      |    DKK |
-| :--------- | :------------------------ | -----: |
+|:-----------|:--------------------------|-------:|
 | 2017-10-03 | meetup.com                | 192.10 |
 | 2017-11-13 | Snacks and drinks         | 340.85 |
 | 2017-12-04 | Foreign bank transfer fee |  35.00 |
@@ -68,6 +68,7 @@ knitr::kable(expenses)
 | 2019-04-23 | Snacks and drinks         | 521.08 |
 | 2019-07-25 | Foreign bank transfer fee |  30.00 |
 | 2019-11-10 | Snacks and drinks         | 683.90 |
+| 2023-04-13 | Snacks and drinks         | 299.40 |
 
 ## Current status
 
@@ -77,7 +78,7 @@ At the moment it all boils down to:
 (profit <- sum(income$DKK) - sum(expenses$DKK))
 ```
 
-    ## [1] 764.67
+    ## [1] 465.27
 
 Since we have a profit we are all happy.
 
