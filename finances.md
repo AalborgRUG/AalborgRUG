@@ -1,7 +1,7 @@
 AalborgRUG finances
 ================
 Ege Rubak
-14 April, 2023
+19 May, 2025
 
 ## Income
 
@@ -54,6 +54,7 @@ expenses[7,] <- data.frame("2019-04-23", "Snacks and drinks", 521.08)
 expenses[8,] <- data.frame("2019-07-25", "Foreign bank transfer fee", 30.00)
 expenses[9,] <- data.frame("2019-11-10", "Snacks and drinks", 683.90)
 expenses[10,] <- data.frame("2023-04-13", "Snacks and drinks", 299.40)
+expenses[11,] <- data.frame("2025-05-14", "Snacks and drinks", 480)
 knitr::kable(expenses)
 ```
 
@@ -69,6 +70,7 @@ knitr::kable(expenses)
 | 2019-07-25 | Foreign bank transfer fee |  30.00 |
 | 2019-11-10 | Snacks and drinks         | 683.90 |
 | 2023-04-13 | Snacks and drinks         | 299.40 |
+| 2025-05-14 | Snacks and drinks         | 480.00 |
 
 ## Current status
 
@@ -78,9 +80,9 @@ At the moment it all boils down to:
 (profit <- sum(income$DKK) - sum(expenses$DKK))
 ```
 
-    ## [1] 465.27
+    ## [1] -14.73
 
-Since we have a profit we are all happy.
+Since we have a deficit we should be worried.
 
 ## Budget
 
